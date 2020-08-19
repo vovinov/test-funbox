@@ -1,20 +1,20 @@
 import React from "react";
 
-function Card() {
+function Card({ card }) {
   return (
-    <div className="cat-food__card">
+    <li className="cat-food__card">
       <div className="cat-card-wrapper">
         <div className="cat-card">
           <span className="cat-card__upper">Сказочное заморское яство</span>
           <h2 className="cat-card__heading">
             Нямушка
-            <p className="cat-card__heading--small">с фуа-гра</p>
+            <p className="cat-card__heading--small">{card.title}</p>
           </h2>
-          <p className="cat-card__bonus">10 порций</p>
-          <p className="cat-card__bonus">мышь в подарок</p>
+          <p className="cat-card__bonus">{card.quantity} порций</p>
+          <p className="cat-card__bonus">{card.bonus}</p>
           <div className="cat-card__weight weight-circle">
             <p className="weight-circle__price">
-              0,5
+              {card.weight}
               <span className="weight-circle__price--small">кг</span>
             </p>
           </div>
@@ -26,7 +26,7 @@ function Card() {
           <span className="cat-card__link--dashed">купи</span>.
         </a>
       </p>
-    </div>
+    </li>
   );
 }
 

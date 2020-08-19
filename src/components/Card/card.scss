@@ -11,6 +11,10 @@
   background: $colorBlue;
   border-radius: 5px;
   margin-bottom: 20px;
+  transition: all 0.3s;
+  &:hover {
+    background-color: $colorBlueHover;
+  }
 }
 
 .cat-card {
@@ -24,6 +28,12 @@
   background-color: $colorWhite;
   padding-left: 46px;
   border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover .cat-card__weight {
+    background-color: $colorBlueHover;
+  }
 
   &__upper {
     display: inline-block;
@@ -51,11 +61,15 @@
     font-size: 13px;
     color: $colorWhite;
     text-align: center;
+    transition: all 0.3s;
   }
   &__link {
     color: $colorBlue;
     &--dashed {
       border-bottom: 1px dashed $colorBlue;
+      &:hover {
+        color: $colorBlueHover;
+      }
     }
   }
   &__weight {
