@@ -12,6 +12,12 @@ function Card() {
           </h2>
           <p className="cat-card__bonus">10 порций</p>
           <p className="cat-card__bonus">мышь в подарок</p>
+          <div className="cat-card__weight weight-circle">
+            <p className="weight-circle__price">
+              0,5
+              <span className="weight-circle__price--small">кг</span>
+            </p>
+          </div>
         </div>
       </div>
       <p className="cat-card__after">

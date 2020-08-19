@@ -58,4 +58,40 @@
       border-bottom: 1px dashed $colorBlue;
     }
   }
+  &__weight {
+    position: absolute;
+    bottom: 11px;
+    right: 11px;
+  }
+}
+
+.weight-circle {
+  width: 100px;
+  height: 100px;
+  background-color: $colorBlue;
+  border-radius: 50%;
+  text-align: center;
+
+  &__price {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 42px;
+    color: $colorWhite;
+    &--small {
+      display: block;
+      font-size: 21px;
+      line-height: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .cat-food__card {
+    padding: 0 40px 50px 40px;
+    &:last-child {
+      padding: 0 40px 0px 40px;
+    }
+  }
 }
