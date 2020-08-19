@@ -1,10 +1,21 @@
 import React from "react";
 
-function Card({ card }) {
+import CardFooter from "./CardFooter";
+
+function Card({ card, toggleSelect }) {
   return (
     <li className="cat-food__card">
-      <div className="cat-card-wrapper">
-        <div className="cat-card">
+      <div
+        className={`cat-card-wrapper cat-card-wrapper--${
+          card.selected ? "red" : "blue"
+        }`}
+      >
+        <div
+          className={`cat-card ${card.disabled && "cat-card--disabled"}`}
+          onClick={() => {
+            toggleSelect(card.id);
+          }}
+        >
           <span className="cat-card__upper">Сказочное заморское яство</span>
           <h2 className="cat-card__heading">
             Нямушка
@@ -12,7 +23,13 @@ function Card({ card }) {
           </h2>
           <p className="cat-card__bonus">{card.quantity} порций</p>
           <p className="cat-card__bonus">{card.bonus}</p>
-          <div className="cat-card__weight weight-circle">
+          <div
+            className={
+              card.selected
+                ? "cat-card__weight weight-circle weight-circle--red"
+                : "cat-card__weight weight-circle weight-circle--blue"
+            }
+          >
             <p className="weight-circle__price">
               {card.weight}
               <span className="weight-circle__price--small">кг</span>
@@ -20,12 +37,11 @@ function Card({ card }) {
           </div>
         </div>
       </div>
-      <p className="cat-card__after">
-        Чего сидишь? Порадуй котэ,&nbsp;
-        <a className="cat-card__link" href="!#">
-          <span className="cat-card__link--dashed">купи</span>.
-        </a>
-      </p>
+      <CardFooter
+        id={card.id}
+        selected={card.selected}
+        disabled={card.disabled}
+      />
     </li>
   );
 }

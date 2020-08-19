@@ -8,12 +8,20 @@
   clip-path: polygon(48px 0, 100% 0, 100% 100%, 0 100%, 0 48px);
   width: 328px;
   height: 480px;
-  background: $colorBlue;
   border-radius: 5px;
   margin-bottom: 20px;
   transition: all 0.3s;
-  &:hover {
-    background-color: $colorBlueHover;
+  &--blue {
+    background: $colorBlue;
+    &:hover {
+      background-color: $colorBlueHover;
+    }
+  }
+  &--red {
+    background: $colorRed;
+    &:hover {
+      background-color: $colorRedHover;
+    }
   }
 }
 
@@ -31,8 +39,17 @@
   cursor: pointer;
   transition: all 0.3s;
 
-  &:hover .cat-card__weight {
+  &:hover .weight-circle--blue {
     background-color: $colorBlueHover;
+  }
+
+  &:hover .weight-circle--red {
+    background-color: $colorRedHover;
+  }
+
+  &--disabled {
+    pointer-events: none;
+    opacity: 50%;
   }
 
   &__upper {
@@ -59,9 +76,12 @@
   }
   &__after {
     font-size: 13px;
-    color: $colorWhite;
     text-align: center;
     transition: all 0.3s;
+    color: $colorWhite;
+    &--disabled {
+      color: $colorYellow;
+    }
   }
   &__link {
     color: $colorBlue;
@@ -82,9 +102,14 @@
 .weight-circle {
   width: 100px;
   height: 100px;
-  background-color: $colorBlue;
   border-radius: 50%;
   text-align: center;
+  &--blue {
+    background-color: $colorBlue;
+  }
+  &--red {
+    background-color: $colorRed;
+  }
 
   &__price {
     position: absolute;
