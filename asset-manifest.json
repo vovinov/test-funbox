@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/test-funbox/static/css/main.d6d3fe75.chunk.css",
+    "main.js": "/test-funbox/static/js/main.a30f73b4.chunk.js",
+    "main.js.map": "/test-funbox/static/js/main.a30f73b4.chunk.js.map",
+    "runtime-main.js": "/test-funbox/static/js/runtime-main.2fc311a1.js",
+    "runtime-main.js.map": "/test-funbox/static/js/runtime-main.2fc311a1.js.map",
+    "static/js/2.4b947310.chunk.js": "/test-funbox/static/js/2.4b947310.chunk.js",
+    "static/js/2.4b947310.chunk.js.map": "/test-funbox/static/js/2.4b947310.chunk.js.map",
+    "index.html": "/test-funbox/index.html",
+    "precache-manifest.efd380aaadcc82dbc3c63b65910acdf7.js": "/test-funbox/precache-manifest.efd380aaadcc82dbc3c63b65910acdf7.js",
+    "service-worker.js": "/test-funbox/service-worker.js",
+    "static/css/main.d6d3fe75.chunk.css.map": "/test-funbox/static/css/main.d6d3fe75.chunk.css.map",
+    "static/js/2.4b947310.chunk.js.LICENSE.txt": "/test-funbox/static/js/2.4b947310.chunk.js.LICENSE.txt",
+    "static/media/style.scss": "/test-funbox/static/media/trebucbd.c93facaf.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2fc311a1.js",
+    "static/js/2.4b947310.chunk.js",
+    "static/css/main.d6d3fe75.chunk.css",
+    "static/js/main.a30f73b4.chunk.js"
+  ]
+}
