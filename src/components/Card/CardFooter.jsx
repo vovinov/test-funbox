@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function CardFooter({ id, selected, disabled }) {
+export default function CardFooter({ id, selected, disabled, onCardClick }) {
   if (selected && id === 1) {
     return (
       <p className="cat-card__after">Печень утки разварная с артишоками.</p>
@@ -27,9 +27,10 @@ export default function CardFooter({ id, selected, disabled }) {
   return (
     <p className="cat-card__after">
       Чего сидишь? Порадуй котэ,&nbsp;
-      <a className="cat-card__link" href="!#">
-        <span className="cat-card__link--dashed">купи</span>.
-      </a>
+      <span className="cat-card__link" onClick={onCardClick}>
+        купи
+      </span>
+      .
     </p>
   );
 }

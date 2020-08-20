@@ -9,7 +9,8 @@ let initialState = {
             quantity: 10,
             bonus: 'мышь в подарок',
             selected: false,
-            disabled: false
+            disabled: false,
+
         },
         {
             id: 2,
@@ -18,7 +19,8 @@ let initialState = {
             quantity: 40,
             bonus: '2 мыши в подарок',
             selected: false,
-            disabled: false
+            disabled: false,
+
         },
         {
             id: 3,
@@ -27,7 +29,8 @@ let initialState = {
             quantity: 100,
             bonus: '5 мышей в подарок',
             selected: false,
-            disabled: true
+            disabled: true,
+
         }
     ]
 }
@@ -49,8 +52,6 @@ export const foodReducer = (state = initialState, action) => {
             }
         default:
             return state
-
-
     }
 }
 
