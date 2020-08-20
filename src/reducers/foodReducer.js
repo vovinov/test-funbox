@@ -4,7 +4,7 @@ let initialState = {
     cards: [
         {
             id: 1,
-            title: 'с фуагрой',
+            title: 'с фуагра',
             weight: '0,5',
             quantity: 10,
             bonus: 'мышь в подарок',

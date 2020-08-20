@@ -51,6 +51,7 @@ function Card({ card, toggleSelect }) {
           </h2>
           <p className="cat-card__bonus">{card.quantity} порций</p>
           <p className="cat-card__bonus">{card.bonus}</p>
+          {card.id === 3 && <p className="cat-card__bonus">заказчик доволен</p>}
           <div className={CatCardWeight}>
             <p className="weight-circle__price">
               {card.weight}
